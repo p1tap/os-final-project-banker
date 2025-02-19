@@ -1,0 +1,25 @@
+Enter file name: test.txt
+Initial Available: [3, 3, 2]
+Need Matrix:
+[7, 4, 3]
+[1, 2, 2]
+[6, 0, 0]
+[0, 1, 1]
+[4, 3, 1]
+Process P1 runs.
+Updated Available: [5, 3, 2]
+Process P3 runs.
+Updated Available: [7, 4, 3]
+Process P4 runs.
+Updated Available: [7, 4, 5]
+Process P0 runs.
+Updated Available: [7, 5, 5]
+Process P2 runs.
+Updated Available: [10, 5, 7]
+
+Processes: P0, P1, P2, P3, P4
+
+Available Resources: [3, 3, 2]
+
+System is in a safe state.
+Safe sequence: P1 -> P3 -> P4 -> P0 -> P2
