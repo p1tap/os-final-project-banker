@@ -31,7 +31,7 @@ def read_input_file(filename):
         raise
 
 def calculate_need_matrix(max_matrix, allocation_matrix):
-    """Calculate the need matrix (Max - Allocation)"""
+    """need matrix (Max - Allocation)"""
     need_matrix = []
     for i in range(len(max_matrix)):
         need_row = []
