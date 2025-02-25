@@ -44,14 +44,14 @@ while len(safe_sequence) < processes:  # continue until all processes are schedu
             print(f"Available: {work}")
             
             if all(need[p] <= work):  # Process p is safe to execute:
-                print(f"✓ P{p} can be executed")
+                print(f"P{p} can be executed")
                 work += allocation[p]  # Add back to avail pool
                 print(f"After P{p} returns resources: {work}")
                 safe_sequence.append(p) # Mark as safe
                 finish[p] = True # Mark as finished
                 found = True
             else:
-                print(f"✗ P{p} must wait - insufficient resources")
+                print(f"No - P{p} must wait - insufficient resources")
     
     # If cannot find any execution, return deadlock
     if not found:
